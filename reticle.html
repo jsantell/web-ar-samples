@@ -146,6 +146,10 @@ class App {
     // using our new renderer's context
     this.session.baseLayer = new XRWebGLLayer(this.session, this.gl);
 
+    // We must ensure that the WebGLRenderer knows that the baselayer's
+    // framebuffer should be our default framebuffer
+    this.renderer.setFramebuffer(this.session.baseLayer.framebuffer);
+
     // We'll update the camera matrices directly from API, so
     // disable matrix auto updates so three.js doesn't attempt
     // to handle the matrices independently.
@@ -153,12 +157,6 @@ class App {
     this.camera.matrixAutoUpdate = false;
 
     this.frameOfRef = await this.session.requestFrameOfReference('eyeLevel');
-
-    // Fixes an issue with three.js switching framebuffer back to 0
-    // after using a render target, fixes an issue with shadows.
-    THREE.Object3D.prototype.onBeforeRender = () => {
-      this.gl.bindFramebuffer(this.gl.FRAMEBUFFER, this.session.baseLayer.framebuffer);
-    }
 
     // Setup the scene
     this.createScene();
