@@ -14,6 +14,7 @@ Demos not working? Ensure the following:
 * The #webxr flag is enabled
 * The #webxr-hit-test flag is enabled
 * You're using a [ARCore-capable Android device](https://developers.google.com/ar/discover/#supported_devices)
+* You have [ARCore](https://play.google.com/store/apps/details?id=com.google.ar.core) installed
 * You're accessing the page over HTTPS
 
 ## License
