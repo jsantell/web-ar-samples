@@ -1,6 +1,6 @@
 # Web AR Samples
 
-A collection of samples to use AR features in the [WebXR Device API]. Also be sure to check out the [AR with WebXR Codelab](https://github.com/googlecodelabs/ar-with-webxr), which shares similar logic and code.
+A collection of samples to use AR features in the [WebXR Device API](https://immersive-web.github.io/webxr/spec/). Also be sure to check out the [AR with WebXR Codelab](https://github.com/googlecodelabs/ar-with-webxr), which shares similar logic and code.
 
 ## Demos
 
