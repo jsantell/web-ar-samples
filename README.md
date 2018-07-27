@@ -13,7 +13,7 @@ Demos not working? Ensure the following:
 * You're using the latest Chrome Canary (at least version 69.0.3453.2)
 * The #webxr flag is enabled
 * The #webxr-hit-test flag is enabled
-* You're using a [ARCore-capable Android device](https://developers.google.com/ar/discover/#supported_devices)
+* You're using a [ARCore-capable Android device](https://developers.google.com/ar/discover/#supported_devices) on [Android 8.0 Oreo](https://www.android.com/versions/oreo-8-0/)
 * You have [ARCore](https://play.google.com/store/apps/details?id=com.google.ar.core) installed
 * You're accessing the page over HTTPS
 
